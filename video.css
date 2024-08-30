@@ -1,0 +1,157 @@
+.video-thumbnail {
+    /* خد ميه في الميه من الواحد اف ار
+    100% from 1fr
+    وكان ممكن منقولش كده لان الافتراضي انه طالما مذكرتش ويدث هياخد الزيدث بتاع البيرينت
+    الاب اللي هو الكنتينر اللي ماسك كل الديف اللي هو يعتبر ال 
+    Column
+    الكالم بتاع الجريد اللي الويدث بتااعه ديناميك واحد اف ار
+    بس ذكرنا هنا 
+    100%
+    لان الصورة ليها ويرد بيهيفير بتحتفظ بال اورجينل سايز بتاعها
+    و بالتالي الصورة هتبوظ 
+    عشان كده قولتله ان الويدث بتاعها عبارة عن
+    100% 
+    من الويدث بتاع الكالم العمود اللي في الجريد او الديف الاب اللي ماسك الصورة
+    يعني الديف الاب عملت ريسايز للبيدج هيكبر يبقى الصورة ميه  في الميه منه
+    يعني الديف الاب عملت ريسايز للبيدج هيصغر يبقى الصورة برضه ميه  في الميه منه
+    يعني الديف الاب عملت ريسايز للبيدج هيبقى متوسط يبقى الصورة برضه ميه  في الميه منه
+    و هكذا
+    انما لو في اي ديف تاني معموله ويدث هارد كودد
+    ده مش هينفع لازم تلغيه و مش لازم تحدد الويدث ليه
+    لانه باي ديفالت هياخد الويدث بتاع الاب البيرنت
+    اللي هو كام؟
+    1fr
+    بحيث يبقى مع ابوه ديناميك ابوه يكبر لما اهمل ريسايز للبيدج
+    هو يكبر مع ابوه
+    عملت ريسايز للصفحة وصغرتها يبقى برضه هيصغر مع ابوه ديناميكلي
+    و لو حبيت تحط الويدث 100 قي المية مش هتضر
+    لان كده معناه بتقوله الويدث ميه في الميه من الاب 
+    يعني هي هي سواء حطيت 100 في الميه للويدث
+    او محطتش اي ويدث خاااالص
+    لانه باي ديفالت هياخد الويدث الديناميكلي
+    1fr
+    بتاع الاب بتاع البيرنت بتاع الكالم
+    column 
+    اللي موجود في الجريد
+
+    */
+    width: 100%;
+    /* width: 300px; */
+    /* display: block; */
+    /* و ديسبلاي بلوك  ملهاش لزمه عارف ليه؟
+    لان الصورة الويدث بتاعها هو هو الويدث بتاع الاب الكالم العمود
+    مفيش حاجة هتيجي جنبها من نفس الديف من نفس الكالم العمود
+    لانها واخده كل الويدث بتاع الاب
+    100% from parent from column = 1fr
+    */
+  }
+  .image-div{
+    position:relative;
+  }
+  .video-time{
+    background-color: #000;
+    color:#FFF;
+    font-family:Roboto,Arial;
+    font-size:14px;
+    padding-right:2px;
+    padding-top:3px;
+    padding-bottom:4px;
+    padding-left:3px;
+    position:absolute;
+    right:5px;
+    bottom:10px;
+    cursor:text;
+  }
+  .video-title {
+    /* width: 250px; */
+    width: 100%;
+    /* و ممكن محطش ويدث خالص زي ماشرحنا فوق لان ده عنصر عادي مش صورة */
+    font-size: 14px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+  .video-author,
+  .video-status {
+    font-size: 10px;
+    color: #606060;
+    font-size: 12px;
+  }
+  .video-author {
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+  /* .video-preview { */
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  /* } */
+  /* .channel-picture { */
+  /* width: 50px; */
+  /* display: inline-block; */
+  /* margin-right: 8px; */
+  /* background-color: gray; */
+  /* } */
+  /* .video-info { */
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  /* background-color: gray; */
+  /* } */
+  .video-preview{
+    cursor:pointer;
+  }
+
+
+  .channel-picture {
+    width: 100%;
+    /* ممكن محطهاش هو كده كده هياخد الويدث واحد اف ار الديناميكلي
+    بتاع ابوه بس انا حطيتها عشان تفهم القصة ماشية ازاي
+    حطيتها محطيتهاش هو كده كده هياخد الويدث بتاع الاب الكالم 
+    1fr
+
+    لكن في الصورة لازم تحطها 100 في الميه من الاب اشمعنى الصورة؟
+    لان الصورة بتحتفظ بال اورجينل سايز الاصلية بتاعتها
+    فلو محطيتش الويدث 100 في الميه
+    الصورة هتبوظ مش هتظهر زي ما احنا عاوزين
+    */
+  }
+  .channel-picture img {
+    width: 35px;
+    border-radius: 50%;
+    /* vertical-align: top; */
+    margin-top: 8px;
+  }
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    /* margin-top:10px; */
+    flex:1;
+  }
+  /* Responsive Design */
+  @media (max-width:860px){
+    .video-grid{
+      grid-template-columns:1fr 1fr;
+    }
+  }
+
+  @media(min-width:861px) and (max-width:1123px)
+  {
+    .video-grid{
+      grid-template-columns:1fr 1fr 1fr;
+    }
+    
+  }
+  
+
+
+  @media (min-width:1124px ){
+    .video-grid{
+      grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+  }

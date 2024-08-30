@@ -1,0 +1,336 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:gold;
+    background-color: gray;
+    background-color:#00f;
+    background-color:#f00;
+    
+    background-color:#FFF;
+    z-index:100;
+    /* 
+    خلي بالك العنصر اللي هو بزيشن فيكسد
+    ملوش باكجراوند كالر  يعني شفاف
+    ترانسبيرنت
+    و ده اكبر دليل انه بيطلع بره الصفحة
+    في الاول قبل محوله الى بزيشن فيكسد
+    كان عنصر عادي واخد الباكجراوند بتاع الصفحة البادي
+    باي ديفالت لان عنصر من عناصر الصفحة في الاول
+    لكن دلوقت لما حولته الى بزيشن فيكسد
+    اصبح غير تابع للصفحة لانه عايم
+    ملوش اي براكجراوند حتى ملوش باكجراوند بتاع الصفحة
+    لانه مش من ضمن عناصر الصفحة اصلا
+    اصبح عايم ملوش دعوة بمكونات الصفحة
+    و بالتالي ملوش اي باكجراوند
+    و اصبح ترانسبيرنت شفاف
+    لازم انت تديله باكجراوند لازم
+    لازم تديله باكجراوند
+    لان ملوش اي باكجراوند شفاف
+    لانه مش تبع الصفحة عااااايم
+    مش من ضمن مكونات الصفحة
+    ولومدتوش باكجراوند و حطيته من فوق خالص
+    اعلى الصفحة هيتهيألك ان الباكجراوند بتاعته
+    نفس الباكجراوند بتاع الصفحة
+    لكن غلط غلط
+    هو قدام عينك باكجراوند ابيض
+    نفس باكجراوند الصفحة 
+    عشان هو شفاااااااف ترانسبيرنت
+    فانت متهيالك ان ده الباكجراوند بتاعته
+    و لكن مش صح
+    و الدليل
+    اعمل اسكرول كده اب او داون
+    هتلاقيه ترانسبيرنت شفاف و هتلاقي العناصر
+    تحته باينه لما تعمل اسكرول
+    و هيتهيألك انه مش ثابت في مكانه
+    لكن هو ثابت في مكانه فعليا 
+    بس لما بعمل اسكرول العناصر بتيجي تحته
+    و هو شفاف فانت بتشوف العناصر اللي تحته
+    فبيتهيألك انه مش ثابت في اول الصفحة
+    لكن لو اديته باكجراوند اي لون انت حابه
+    لما تيجي تعمل اسكرول
+    العناصر هتيجي تحته و تحت الباكجراوند بتاعه
+    و بالتالي هتحس فعلا و تعرف انه ثابت في مكانه
+    و كل العناصر لما بعمل اسكرول
+    بتعدي من تحته و تحت الباكجراوند بتاعه
+    و هو ثابت في مكانه
+    يبقى لاااااااااازم تديله باكجراوند كلر
+    بأي لون انت حابه
+    مثلا ابيض بنفس لون الصفحة
+    او اصفر او احمر او اي هباب
+    */
+    /* 
+    طب دلوقت عاوز اعمل بوردر خط كده
+    من تحت الهيدر يفصل بينه و بين
+    محتوى الصفحة
+    بسيطة نعمل بوردر عادي بس من اسفل الهيدر فقط مش من كل الاتجاهات
+    يعني بوردر باتيم فقط من تحت فقط
+    تعال نعمله
+     */
+     border-bottom-width:1px;
+     border-bottom-style:solid;
+     border-bottom-color:#dedede;
+     
+
+     margin-bottom:28px;
+     /* لاحظ المارجن
+     مش هيشتغل معاك لو عرفت ليه تبقى معلم؟
+     لان الهيدر دلوقت اصبح بزيشن فيكسد
+     يعني عايم على الصفحة مش من ضمن المكونات الداخلية
+     للصفحة عشان تديله مارجن يا معلم
+     هو اصلا مش من ضمن مكونات الصفحة حاليا
+     عاااااااااايم
+     مش من ضمن مكونات الصفحة حاليا لانه بزيشن فيكسد
+     عايم مش من ضمن مكونات الصفحة
+     بالتالي هتديله مارجن ازاي؟؟؟
+     مستحيل لانه مش من ضمن مكونات الصفحة حاليا
+
+     يبقى البديل نروح  للديف الكنتينر اللي ماسك المحتوى كله
+     و نقوله لو سمحت مارجن تاب 10 بكسل
+     عادي هينفع لانه من ضمن مكونات الصفحة الحالية
+     ليس عنصر بزيشن فيكسد
+     بالتالي ينفع تديله مارجن براحتك
+     
+     */
+    
+  }
+  .left-section {
+    /* background-color: lightblue; */
+    /* width: 150px; */
+    /* الويدث اصبح ملوش لزمه
+    هو هياخد الويدث اللي محتاجه على
+    حسب محتواه
+    */
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-right:115px;
+    
+  }
+  .hamburger-menu{
+    height:25px;
+    margin-left:25px;
+    margin-right:25px;
+    cursor:pointer;
+  }
+  .youtube-logo{
+    height:20px;
+    cursor:pointer;
+    
+  }
+  .middle-section {
+    /* background-color: lightpink; */
+    margin-left: 70px;
+    margin-right: 70px;
+    flex: 1;
+    display:flex;
+    align-items: center;
+    padding-right:85px;
+   
+  }
+  .search-bar{
+    height:40px;
+    border:1px solid rgb(100, 100, 100);
+    font-size:16px;
+    /* الفونت سايز هنا خاصة بالمحتوى اللي هيكتبه اليوزر
+    في السيرش بار
+    */
+    padding-left:10px;
+    flex:1; 
+    width:0;
+    /* ويدث صفر يعني اعملي شرينك */
+    max-width:500px;
+    border-radius:2px;
+    box-shadow:inset 1px 2px 2px rgba(0,0,0,0.05);
+    
+  }
+  .search-bar::placeholder{
+    font-family:Roboto, Arial;
+    font-size:16px;
+    /* انا هنا بظبط الكلمة نفسها فقط
+    كلمة 
+    search
+    بظبط طريقة عرضها لليوزر 
+    و مش بظبط المحتوى اللي هيكتبه اليوزر
+    في السيرش بار
+    انا بس بظبط كلمة سيرش
+    الفونت بتاعها كام 
+    الفاميلي بتاع الفونت 
+    و كده
+    لكن  لو عاوز اظبط الفونت بتاع المحتوى
+    هروح اعمله في السيرش بار نفسه
+    انا هنا مأكسس على البليس هولدر فقط
+    */
+  }
+  .search-icon-button{
+    background-color:rgb(240,240,240);
+    /* opacity: 0.4; */
+    height:44px;
+    width:65px;
+   
+    border:1px solid gray;
+    transition: background-color 1s, opacity 1s;
+    margin-left:-1px;
+    margin-right:8px;
+   
+
+  }
+  .search-icon-button{
+    position:relative;
+    cursor:pointer;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .search-icon-button .tooltip-div,
+  .voice-search-button .tooltip-div
+  {
+    background-color:rgb(62, 61, 61);
+    color:#FFF;
+    font-family:Roboto, Arial;
+    font-size:18px;
+    padding:8px 3px;
+    position:absolute;
+    bottom:-55px;
+    border-radius: 3px;
+    opacity:0;
+    pointer-events:none;
+    transition: opacity 0.15s;
+    white-space:nowrap;
+    
+  
+  }
+  
+  .search-icon-button:hover .tooltip-div,
+  .voice-search-button:hover .tooltip-div
+  {
+    opacity:1;
+
+   
+  }
+
+
+
+   
+ 
+  .search-icon{
+    margin-top:4px;
+    height:25px;
+  }
+  .voice-search-button{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border:none;
+    background-color: rgb(245,245,245);
+    /* background-color: red; */
+
+    
+  }
+  .voice-search-button{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .voice-search-icon{
+    height:24px;
+    /* margin-top:4px; */
+    /* background-color: rgb(245,245,245); */
+    /* background-color: red;; */
+    /* 
+    هنا الباكجراوند ورا الامدج الداخلية فقط
+    اللي جوه الباتن 
+    و ليس ورا الزرار كله
+    خلي بالك
+    الصح انك تعمل الباكجراوند للزرار كله
+    مش العنصر اللي جوه الزار
+
+    */
+
+  }
+
+  
+  .right-section {
+    /* background-color: lightblue; */
+    width: 182px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    margin-right:24px;
+    flex-shrink:0;
+
+  }
+  .upload-icon{
+    height:24px;
+  }
+  .upload-icon-div, .youtube-apps-icon-div, .notification-icon-div{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+  }
+  .upload-icon-div .tooltip-div, 
+  .youtube-apps-icon-div .tooltip-div,
+   .notification-icon-div .tooltip-div{
+    background-color:rgb(62, 61, 61); ;
+    color:#FFF;
+    padding:8px 3px;
+    font-family:Roboto,Arial;
+    font-size:18px;
+   
+    position:absolute;
+    bottom:-53px;
+    border-radius: 4px;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 1s;
+    white-space:nowrap;
+
+  }
+  .upload-icon-div:hover .tooltip-div,
+   .youtube-apps-icon-div:hover .tooltip-div,
+   .notification-icon-div:hover .tooltip-div{
+    opacity:1;
+  }
+  .youtube-apps-icon{
+    height:24px;
+    
+  }
+  .notifications-div{
+    position:relative;
+    
+  }
+  .notifications-count{
+    position:absolute;
+    top:-1px;
+    right:-5px;
+    padding: 2px 6px;
+    background-color: rgb(190, 10, 10);
+    color:#FFF;
+    font-size:10px;
+    text-align:center;
+    border-radius: 50%;
+   
+  }
+  .notification-icon{
+    height:25px;
+  }
+  .my-channel-icon{
+    height: 32px;
+    /* width:10px; */
+    border-radius:50%;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,61 @@
+.side-bar{
+    font-family:Roboto,Arial;
+    background-color: #FFF;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        /* bottom: 100px; */
+        width: 75px;
+        /* مش محتاج في السايد بار نفسه اعمل ديسبلاي فليكس عارف ليه؟
+        لان ال 6 ديفات كلهم كل واحد فيهم واخد الويدث كله بتاع الاب
+        و الديف من عناصر البلوك كمان الديفالت انهم هيجوا تحت بعض
+        عشان كده مش محتاج ان اعمل في السايد بار نفسه
+        ديسبلاي فليكس و اقوله فليكس ديركشن كالم
+        مش محتاج كده لان
+        لان العناصر  الستة اللي جواه عبارة عن ديفات الديفالت فيها انها اصلا
+        عناصر بلوك مش بتيجي جنب بعض ابدا
+        بتيجي تحت بعض لانهم عناصر بلوك و ليس انلاين بلوك او انلاين
+        حتى لو الويدث بتاع كل ديف 1 بكسل فقط و الاب الويدث بتاعه 1000 بكسل
+        برضه الديفات هتيجي تحت بعض لان الديفالت بتاعها انها عناصر بلوك
+        بتاخد الانتاير لاين كله و هنا هتاخد الانتاير ويدث بتاع الاب كله
+        حاى ولو الويدث بتاعها  1 بكسل فقط
+        لانها عناصر ديف بلوك
+        فهمت؟ اه بفضل الله
+        */
+        /* display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:start; */
+        z-index:101;
+        padding-top:5px;
+
+    
+}
+.sidebar-link{
+    
+    width:75px;
+    height:75px;
+    cursor:pointer;
+    display:flex;
+    flex-shrink:0;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    /* background-color:gray;  */
+    margin-bottom:1px;
+
+
+}
+.sidebar-link img{
+    height:25px;
+    margin-bottom:5px;
+
+}
+.sidebar-link div{
+    font-size:10px;
+}
+
+.sidebar-link:hover{
+   background-color:rgb(238,238,238);
+   
+}
